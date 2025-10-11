@@ -1,0 +1,229 @@
+/*  Font    */
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*  Web Page    */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #264653;
+    width: 100%;
+}
+
+.nav-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/*  Navigation Bar ITEMS   */
+.logo{
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+.navbar ul{
+    list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: 'Kodchasan', sans-serif;
+      font-size: 18px;
+}
+.navbar ul li{
+    float: left;
+}
+.navbar ul li a {
+  display: block;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: .3s;
+}
+/*  Sections */
+/*  HOME SECTION  */
+.home{
+    width: 100%;
+    padding-top: 10vh;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#home-img{
+    position: relative;
+    padding-left: 25%;
+}
+#home-img img{
+    height: 400px;
+    width: auto;
+}
+#home-contents{
+    position: relative;
+    font-family: 'Kodchasan', sans-serif;
+    width: 100vh;
+    color: #ffffff;
+}
+#h2-title1{
+    margin-left: 1vh;
+    font-size: 35px;
+}
+#h2-title2{
+    margin-top: 6vh;
+    margin-left: 15vh;
+    font-size: 35px;
+}
+#h1-title1{
+    margin-top: 6vh;
+    margin-left: -20vh;
+    font-size: 40px;
+}
+
+#home-bottom{
+    position: relative;
+    top: 2.6vw;
+    background-color: #f4a261;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#home-bottom p{
+    margin-left: 5%;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color:white;
+    pointer-events: none;
+}
+
+#resume-btn{
+    margin-top: 5vh;
+    margin-left: 20vh;
+    padding: 2vh;
+    background-color: #f4a261;
+
+    width: 100px;
+    height: 50px;
+    border-radius: 6px;
+    text-align: center;
+}
+#resume-btn a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*  ABOUT SECTION  */
+.about{
+    width: 100%;
+    padding-top: 10vh;
+    padding-left: 10%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+#aboutme-paragraph{
+    height: 200px;
+    width: 400px;
+    margin-right: 4vh;
+    margin-left:35vh ;
+}
+#aboutme-paragraph h2{
+    font-size: 28px;
+    margin-bottom: 2px;
+}
+#aboutme-paragraph p{
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#about-img img{
+    height: 300px;
+    width: auto;
+    border-radius: 8px;
+}
+#about-scrollable{
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-left: 18%;
+    height: 250px;
+    width: 800px;
+    border-radius: 6px;
+}
+#about-scrollable img{
+    height: 200px;
+    width: auto;
+    padding: 1vh;
+}
+/*  PROJECTS    */
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10vh;
+}
+
+
+.project-img{
+    background-color: #2a9d8f;
+    border-radius: 6px;
+    width: 400px;
+    margin: 20px;
+    
+    text-align: justify;
+    color: white;
+    font-family: 'Kodchasan', sans-serif;
+}
+.project-img img{
+    height: 150px;
+    width: 100%;
+}
+
+
+/*  CONTACTS    */
+
+/*  Scrollbar   */
+#about-scrollable::-webkit-scrollbar{
+    background-color: #83c5be;
+    border-radius: 6px;
+}
+#about-scrollable::-webkit-scrollbar-thumb{
+    background: linear-gradient(#2a9d8f,#83c5be);
+    border-radius: 6px;
+}
+
+/*  Hover   */
+.navbar ul li a:hover {
+    color: #f4a261;
+}
+#resume-btn:hover{
+    color: whitesmoke;
+    background-color: #e76f51;
+    transition: 1s;
+}
