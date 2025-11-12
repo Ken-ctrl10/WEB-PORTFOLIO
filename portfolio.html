@@ -1,0 +1,272 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Ken Castillo | Web Portfolio</title>
+
+    <link rel="stylesheet" href="./PORTFOLIO CSS/main.css">
+    <link rel="stylesheet" href="./PORTFOLIO CSS/header.css">
+    <link rel="stylesheet" href="./PORTFOLIO CSS/home.css">
+    <link rel="stylesheet" href="./PORTFOLIO CSS/about.css">
+    <link rel="stylesheet" href="./PORTFOLIO CSS/projects&contact.css">
+
+    <link rel="stylesheet" href="./PORTFOLIO CSS/responsiveness.css">
+
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js" defer></script>
+    <script src="./PORTFOLIO JS/home.js" defer></script>
+    <script src="./PORTFOLIO JS/header.js" defer></script>
+    <script src="./PORTFOLIO JS/contact.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <a href="#home"><span id="span-header">Ken</span></a>
+      </div>
+
+      <div class="header-right">
+        <a href="#home">Home</a>
+        <a href="#aboutme">About</a>
+        <a href="#project-contact">Projects & Contact</a>
+        
+        <button class="night-mode-btn">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+      </div>
+      
+      <button class="hamburger-menu" aria-label="Open navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </header>
+
+    <main>
+      <!--  HOMEPAGE  -->
+
+      <section class="home home-section" id="home">
+        <div class="home-image">
+          <div class="image-container">
+            <div class="front-image">
+              <img src="/ASSETS/home-1.png" alt="/home-1 image">
+            </div>
+
+            <div class="back-image">
+              <img src="/ASSETS/home-2.png" alt="/home-2 image">
+            </div>
+          </div>
+        </div>
+
+        <div class="home-details">
+          <p class="hello">Hello, I'm</p>
+          <h2>Ken Castillo</h2>
+          <p class="p-details">Computer Science Graduate</p>
+          <p class="p-details" id="typing-effect"></p>
+
+          <div class="home-buttons">
+            <a href="./ASSETS/Castillo_RESUME.pdf" class="resume-btn" download>
+              Download CV
+            </a>
+
+            <div class="quick-socials-btn">
+              <a href="https://www.linkedin.com/in/prince-kenneth-castillo-8b9b33278/" class="linkedin-btn" target="_blank" aria-label="View my LinkedIn profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              
+              <a href="https://github.com/Ken-ctrl10" class="github-btn" target="_blank" aria-label="View my GitHub profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--  ABOUT ME  -->
+      
+      <section class="about about-section" id="aboutme">
+        <h2 class="section-title">About Me</h2>
+          <div class="about-details">
+            <div class="about-box">
+              <img src="./ASSETS/aboutme.jpg" alt="internship-photo">
+              <div class="about-text-details">
+                <p class="about-text">
+                  Hello! I'm Prince Kenneth,
+                </p>
+                <p class="about-text">
+                  a Recent Computer Science graduate and consistent Dean's Lister. I have hands-on experience in IT operations from my internship at Nexus Technologies, where I was trained in Linux Essentials, CompTIA Server+, CompTIA Network+, and Dynatrace monitoring tools. My development experience is highlighted by our machine learning research paper on FILWA a Filipino writing assistant. 
+                  I have a solid foundation in Python, Java, and C/C++, and currently expanding my skills and knowledge through free courses/resources.  I am actively seeking a role in software development, ai/ml reseacher, or IT operations where I can expand my knowledge with regards to the industries latest practices and to contribute my problem-solving and technical skills.
+                </p>
+              </div>
+            </div>
+
+            <div class="skills-section">
+              <div class="skills-grid">
+                
+                <div class="skill-category">
+                  <h4>Languages</h4>
+                  <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>C/C++</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                </div>
+                
+                <div class="skill-category">
+                  <h4>IT & Operations</h4>
+                  <ul>
+                    <li>Linux Essentials</li>
+                    <li>CompTIA Server+</li>
+                    <li>Dynatrace</li>
+                    <li>System Monitoring</li>
+                  </ul>
+                </div>
+                
+                <div class="skill-category">
+                  <h4>Other</h4>
+                  <ul>
+                    <li>Machine Learning</li>
+                    <li>Git & GitHub</li>
+                    <li>Data Fundamentals</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="about-certification">
+              <div class="certificate-scroller">
+                <img src="./ASSETS/CERTIFICATES/cert-1.png" alt="PrincipleOfDesignCert">
+                <img src="./ASSETS/CERTIFICATES/cert-2.png" alt="IntroInDataPrivacyCert">
+                <img src="./ASSETS/CERTIFICATES/cert-3.png" alt="PrincipleInHTMLandCSSCert">
+                <img src="./ASSETS/CERTIFICATES/cert-4.png" alt="UsingHTMLandCSSCert">
+                <img src="./ASSETS/CERTIFICATES/cert-5.png" alt="UsingJSCert">
+                <img src="./ASSETS/CERTIFICATES/cert-6.png" alt="CreatingStaticWebsiteCert">
+                <img src="./ASSETS/CERTIFICATES/cert-7.png" alt="PythonForBeginnersCert">
+                <img src="./ASSETS/CERTIFICATES/cert-8.png" alt="IntroInCyberSecCert">
+                <img src="./ASSETS/CERTIFICATES/cert-9.png" alt="PythonEss1Cert">
+                <img src="./ASSETS/CERTIFICATES/cert-10.png" alt="PythonEss2Cert">
+                <img src="./ASSETS/CERTIFICATES/cert-11.png" alt="DataFundamentalsCert">
+                <img src="./ASSETS/CERTIFICATES/cert-12.png" alt="BigData101Cert">
+                <img src="./ASSETS/CERTIFICATES/cert-13.png" alt="WebDevelopmentFundamentalsCert">
+
+                <img src="./ASSETS/CERTIFICATES/cert-1.png" alt="PrincipleOfDesignCert">
+                <img src="./ASSETS/CERTIFICATES/cert-2.png" alt="IntroInDataPrivacyCert">
+                <img src="./ASSETS/CERTIFICATES/cert-3.png" alt="PrincipleInHTMLandCSSCert">
+                <img src="./ASSETS/CERTIFICATES/cert-4.png" alt="UsingHTMLandCSSCert">
+                <img src="./ASSETS/CERTIFICATES/cert-5.png" alt="UsingJSCert">
+                <img src="./ASSETS/CERTIFICATES/cert-6.png" alt="CreatingStaticWebsiteCert">
+                <img src="./ASSETS/CERTIFICATES/cert-7.png" alt="PythonForBeginnersCert">
+                <img src="./ASSETS/CERTIFICATES/cert-8.png" alt="IntroInCyberSecCert">
+                <img src="./ASSETS/CERTIFICATES/cert-9.png" alt="PythonEss1Cert">
+                <img src="./ASSETS/CERTIFICATES/cert-10.png" alt="PythonEss2Cert">
+                <img src="./ASSETS/CERTIFICATES/cert-11.png" alt="DataFundamentalsCert">
+                <img src="./ASSETS/CERTIFICATES/cert-12.png" alt="BigData101Cert">
+                <img src="./ASSETS/CERTIFICATES/cert-13.png" alt="WebDevelopmentFundamentalsCert">
+              </div>
+            </div>
+
+          </div>
+      </section>
+
+
+      <!--  PROJECT & CONTACT PAGE  -->
+      <section class="project project-section" id="project-contact">
+        <h2 class="section-title">LATEST PROJECTS</h2>
+
+        <div class="project-grid">
+          <!--  PROJECT 1 -->
+            <div class="project-card">
+              <img src="./ASSETS/PROJECTS/project-1.png" alt="FILWA-PROJECT-IMG">
+              <div class="project-details">
+                <h3>FILWA | Filipino Digital Writing Assistant</h3>
+                <p>A web-based Filipino Writing Assistant designed to help people proficiently write in Filipino.</p>
+                <div class="tech-tags">
+                  <span>Python</span>
+                  <span>Pandas</span>
+                  <span>Machine Learning</span>
+                </div>
+                <div class="card-links">
+                  <a href="#" class="btn-link">View Project</a>
+                  <a href="https://github.com/Ken-ctrl10/filwa" class="btn-link-icon" target="_blank" aria-label="View GitHub Repo">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          <!--  PROJECT 2 -->
+            <div class="project-card">
+              <img src="./ASSETS/work-in-progress.jpg" alt="BUDGET-TRACKING-IMG">
+              <div class="project-details">
+                <h3>Budget Tracking System</h3>
+                <p>A web application built to manage personal finances and track spending habits.</p>
+                <div class="tech-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="card-links">
+                  <a href="#" class="btn-link">View Project</a>
+                  <a href="https://github.com/Ken-ctrl10/BUDGET-TRACKING-SYSTEM" class="btn-link-icon" target="_blank" aria-label="View GitHub Repo">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          <!--  PROJECT 3  -->
+
+        </div>
+
+        <h2 class="section-title">CONTACT ME HERE</h2>
+        <div class="contact-container">
+          <a href="mailto:pk.castilloacc54@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>EMAIL</span>
+          </a>
+          
+          <a href="https://castillokenneth.jobs180.com/" class="contact-item" target="_blank">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>JOBS18O</span>
+          </a>
+          
+          <a href="https://www.instagram.com/_its.ken4?igsh=Z3didjA0b2dha2x6&utm_source=ig_contact_invite" class="contact-item" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            <span>IG</span>
+          </a>
+          
+          <a href="https://github.com/Ken-ctrl10" class="contact-item" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <span>GITHUB</span>
+          </a>
+          
+          <a href="#" class="contact-item" id="viber-btn">
+            <i class="fa-brands fa-viber"></i>
+            <span>VIBER</span>
+          </a>
+        </div>
+
+      </section>
+    </main>
+    
+    <footer>
+      <p><i class="fa-regular fa-copyright"></i> 2025 Prince Kenneth Castillo. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <!--  VIBER QR CODE   -->
+    <div class="modal" id="viber-modal">
+      <div class="modal-content">
+        <button class="modal-close-btn" id="modal-close">&times;</button>
+        <h3>Viber QR Code</h3>
+        <p>Scan this to connect!</p>
+        <img src="./ASSETS/VIBER-QR.jpg" alt="Viber QR Code">
+      </div>
+    </div>
+
+  </body>
+  </html

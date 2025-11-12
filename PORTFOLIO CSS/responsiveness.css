@@ -1,0 +1,157 @@
+/* ==============================================
+   RESPONSIVE STYLES
+   ==============================================
+*/
+
+/* --- 900px Breakpoint ---
+   (For Tablets and small laptops)
+   Here, we make 2-column layouts stack and add the hamburger menu.
+*/
+@media (max-width: 900px) {
+
+  /* --- HEADER (Mobile) --- */
+  
+  /* SHOW the hamburger button */
+  .hamburger-menu {
+    display: block;
+    z-index: 101; /* Make sure it's on top of the menu */
+  }
+
+  /* This turns the desktop nav into a full-screen pop-up */
+  .header-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    background-color: #ECDFCC;
+    
+    /* Stack the links vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+    /* Hide it off-screen to the right by default */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* This is the "active" class our JS will add */
+  .header-right.nav-active {
+    transform: translateX(0);
+  }
+  
+  /* Style the links for the big pop-up menu */
+  .header-right a {
+    font-size: 2rem;
+  }
+
+  /* --- Dark Mode for Mobile Menu --- */
+  body.dark-mode .header-right {
+    background-color: #181C14;
+  }
+
+  /* Center the 'KEN' logo when nav is hidden */
+  .header-left {
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .header-left a {
+    margin: 0 auto;
+  }
+  
+  /* --- HOME PAGE --- */
+  .home-section {
+    /* Stack the image and text vertically */
+    flex-direction: column;
+    padding: 60px 10%; /* Reduce side padding */
+    gap: 3rem;
+  }
+  .home-details {
+    /* Center the text */
+    order: 1; /* Keep text first */
+    align-items: center;
+    width: 100%;
+  }
+  .home-image {
+    order: 2; /* Put image second */
+  }
+
+  /* --- ABOUT ME PAGE --- */
+  .about-details .section-title {
+    width: 90%;
+  }
+  .about-box {
+    width: 90%;
+    flex-direction: column; /* Stack image and text */
+    height: auto;
+    align-items: center;
+  }
+  .skills-section {
+    width: 90%;
+  }
+  .skills-grid {
+    flex-direction: column; /* Stack skill categories */
+  }
+  .about-certification {
+    width: 90%;
+  }
+
+  /* --- PROJECTS & CONTACT PAGE --- */
+  .project-grid {
+    padding: 0 10%; /* Reduce side padding */
+  }
+}
+
+
+/* ==============================================
+   --- 600px Breakpoint ---
+   (FOR MOBILE PHONES)
+   This block adjusts the layout for most phone sizes.
+   ==============================================
+*/
+@media (max-width: 600px) {
+
+  /* --- GLOBAL (PHONE) --- */
+  html {
+    /* This makes all your 'rem' units smaller on phones! */
+    font-size: 90%; 
+  }
+
+  /* --- HOME PAGE (PHONE) --- */
+  .home-section {
+    padding: 40px 5%; /* Even less padding */
+  }
+
+  /* --- ABOUT ME PAGE (PHONE) --- */
+  .about-details .section-title,
+  .about-box,
+  .skills-section,
+  .about-certification {
+    width: 95%; /* Make content almost fill the screen */
+  }
+
+  /* --- PROJECTS PAGE (PHONE) --- */
+  .project-grid {
+    padding: 0 5%; /* Even less padding */
+  }
+  .project-card {
+    /* Make the card fill the screen,
+       but not get bigger than 350px */
+    width: 90%;
+    max-width: 350px;
+  }
+
+  /* --- CONTACT PAGE (PHONE) --- */
+  .contact-container {
+    padding: 0 5%;
+    gap: 1rem; /* Make icons a bit closer */
+  }
+  .contact-item i {
+    width: 60px; /* Make icon boxes smaller */
+    height: 60px;
+    font-size: 2rem;
+  }
+}
