@@ -20,7 +20,7 @@
   padding: 1.2%;
   gap: 1rem;
   width: 70%;
-  height: 100rem;
+  height: 16rem;
   background-color: #3C3D37;
   color: #fff;
   border-radius: 1rem;
@@ -142,5 +142,6 @@
   }
 
 }
+
 
 
