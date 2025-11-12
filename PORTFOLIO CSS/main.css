@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  GLOBAL VARIABLES  */
+html {
+  /* This makes all anchor link scrolling smooth */
+  scroll-behavior: smooth;
+
+  /* This tells the browser to stop 6rem *before* the 
+     anchor link, leaving room for your header */
+  scroll-padding-top: 6rem;
+}
+
+body{
+  background-color: #ECDFCC;
+  font-family: 'Koulen';
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 
+=============================
+  GLOBAL SECTION TITLE
+=============================
+*/
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: 2rem; /* From your about.css */
+  font-weight: 300; /* From your about.css */
+  margin: 1rem 0 .5rem 0; /* A new, consistent margin */
+}
+
+.section-title::before,
+.section-title::after {
+  content: '';
+  flex-grow: 1;
+  background-color: #3C3D37;
+  height: 2px;
+  margin: 0 1.5rem;
+}
+
+
+/*
+=========================================
+  DARK MODE STYLES
+=========================================
+*/
+
+/* --- Main Body --- */
+body.dark-mode {
+  background-color: #181C14;
+  color: #ECDFCC;
+}
+
+/* --- Header --- */
+
+body.dark-mode .header {
+  background-color: #181C14;
+}
+
+body.dark-mode .header-left a {
+  color: #ECDFCC;
+}
+
+body.dark-mode .header-right a {
+  color: #ECDFCC;
+}
+
+body.dark-mode .night-mode-btn i {
+  color: #ECDFCC;
+}
+
+body.dark-mode .header-left {
+  color: #ECDFCC;
+}
+
+/* Dark mode for the hamburger button */
+body.dark-mode .hamburger-menu {
+  color: #ECDFCC;
+}
+
+/* --- Section Titles (Projects & Contact) --- */
+body.dark-mode .section-title::before,
+body.dark-mode .section-title::after {
+  background-color: #ECDFCC;
+}
+
+/*  --- Home Buttons ---  */
+
+body.dark-mode .resume-btn{
+  background-color: #697565;
+}
+
+body.dark-mode .github-btn{
+  background-color: #3C3D37;
+}
+
+/* --- About Me Section --- */
+body.dark-mode .about-box {
+  background-color: #697565 ;
+  color: #f0f0f0;
+}
+
+body.dark-mode .skill-category {
+  background-color: #3C3D37; /* Dark card */
+}
+
+body.dark-mode .skill-category h4 {
+  border-bottom-color: #181C14; /* Darker border */
+}
+
+/* We also need to add color to the list text */
+body.dark-mode .skill-category li {
+  color: #ECDFCC;
+}
+
+/* --- Project Cards --- */
+body.dark-mode .project-card {
+  background-color: #3C3D37;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .tech-tags span {
+  background-color: #181C14;
+  border-color: #ECDFCC;
+  color: #ECDFCC;
+}
+
+body.dark-mode .btn-link{
+  background-color: #697565;
+}
+
+body.dark-mode .fa-github{
+  color: #ECDFCC;
+}
+
+/* --- Contact Icons --- */
+body.dark-mode .contact-item {
+  color: #ECDFCC;
+}
+
+body.dark-mode .contact-item i {
+  background-color: #3C3D37;
+  color: #ECDFCC;
+}
+
+body.dark-mode .modal-content{
+  background-color: #3C3D37;
+  color: #ECDFCC;
+}
+
+/* --- Footer --- */
+body.dark-mode footer {
+  border-top-color: #3C3D37;
+}
+
+body.dark-mode footer p {
+  color: #ECDFCC;
+}
