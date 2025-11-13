@@ -17,7 +17,7 @@
   text-align: justify;
   margin-bottom: 0%;
 
-  padding: 1.2%;
+  padding: 1.3%;
   gap: 1rem;
   width: 70%;
   height: 15rem;
@@ -35,20 +35,21 @@
   flex-shrink: 0;
 }
 
-/* --- THIS IS THE NEW FIX --- */
 .about-text-details{
   /* Explicitly set the width of the text box */
   flex-basis: calc(76% - 1rem);
   
-  /* Fixes a common flexbox overflow bug */
   min-width: 0; 
 }
-/* --- END OF NEW FIX --- */
-
 
 .about-text{
   margin: 0;
-  font-size: .8rem;
+  font-size: 1.1rem;
+
+  text-align: justify;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
 
   /* These rules force the text to wrap */
   overflow-wrap: break-word;
@@ -104,8 +105,6 @@
   font-size: .65rem;
   line-height: 1.2;
 }
-
-
 
 .about-certification{
   width: 70%;
